@@ -22,15 +22,12 @@ function App() {
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
-          <img
-          className="avatar"
-          src={user.imageUrl}
-          alt={'Photo of ' + user.name}
-          style={{
-          width: user.imageSize,
-          height: user.imageSize
-        }}
-      /> 
+        </a>
+        <a>
+          <><img src={user.imageUrl} alt={user.name}  style={{
+      width: user.imageSize,
+      height: user.imageSize
+    }} /></>
         </a>
       </div>
       <h1>Vite + React</h1>
@@ -58,12 +55,7 @@ function MyButton()
 
 function DisplayInfo()
 {
-  return 
-  (
-    <h2>
-        
-    </h2>
-  );
+  
 }
 
 export default App
