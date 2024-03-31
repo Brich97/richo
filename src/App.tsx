@@ -3,6 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const user = 
+{
+  name: 'Brittany Richards',
+  imageUrl: 'https://imgur.com/a/DgWaVz5',
+  imageSize: 90,
+};
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,7 +22,15 @@ function App() {
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
-          <MyButton />
+          <img
+          className="avatar"
+          src={user.imageUrl}
+          alt={'Photo of ' + user.name}
+          style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      /> 
         </a>
       </div>
       <h1>Vite + React</h1>
@@ -33,9 +49,20 @@ function App() {
   )
 } //end
 
-function MyButton() {
+function MyButton() 
+{
   return (
     <button>I'm a button</button>
+  );
+}
+
+function DisplayInfo()
+{
+  return 
+  (
+    <h2>
+        
+    </h2>
   );
 }
 
