@@ -36,7 +36,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       style={{
-        backgroundColor: 'pink',
+        backgroundColor: 'blue',
         width: '100px',
         height: '100px'
       }}
