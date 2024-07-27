@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
+import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Button from './components/Button';
 import './App.css'
+import {FaInstagram} from 'react-icons/fa'
 
 const user = 
 {
@@ -15,48 +18,26 @@ function App() {
 
   return (
     <>
-    <div
-      style={{
-        backgroundColor: 'blue',
-        width: '100px',
-        height: '100px'
-      }}
-    />
+    <h1>HOWDY THIS IS HEADING</h1>
+     <a href="https://www.instagram.com/brittany.exe_/" target="_blank">
+      <FaInstagram size={50} color="#E4405F" className='instagram'/>
+         </a>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://www.youtube.com/watch?v=qcbGyRwkiZo&ab_channel=USHKA" target="_blank">
+          <img src="gnome.png" className="gnome" alt="The Gnome" />
         </a>
       </div>
-      <h1>"Brittany Richards"</h1>
-      <div className="card">
+      <div className="button">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <p className="display-image">
+        Click the Gnome child 
       </p>
       
     </>
   )
 } //end
-
-function MyButton() 
-{
-  return (
-    <button>I'm a button</button>
-  );
-}
-
-function DisplayInfo()
-{
-  
-}
 
 export default App
