@@ -6,16 +6,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: './index.html', 
+        main: './index.html',
       },
       output: {
         manualChunks: {
-          react: ['react', 'react-dom']
-        }
-      }
-    }
-  },
-  css: {
-    postcss: './postcss.config.js',
+          react: ['react', 'react-dom'],
+        },
+      },
+    },
   }
 });
