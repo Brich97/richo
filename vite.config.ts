@@ -10,7 +10,10 @@ export default defineConfig({
       },
       output: {
         manualChunks: {
-          react: ['react', 'react-dom'],
+          react: ['react', 'react-dom'], 
+          //normally manual chunks is used for larger
+          //projects and really just depends on project specs. 
+         //Kinda unneccessary to use in smaller projects
         },
       },
     },
