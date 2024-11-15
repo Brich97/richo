@@ -52,6 +52,6 @@ function App() {
       </p>
     </>
   )
-}
+} //TO DO - MAKE BALL MOVE SEAMLESSLY
 
 export default App
