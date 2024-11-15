@@ -70,7 +70,7 @@ function App()
         What's the worst that could happen?
       </p>
       <div className="sunflowers">
-        <img src={sunflowers} alt="Sunflowers Footer"/>
+       {/* <img src={sunflowers} alt="Sunflowers Footer"/>*/}
       </div>
     </>
   )
