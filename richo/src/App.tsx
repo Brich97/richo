@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react'
 import ball from './assets/ball.gif'
-import sunflowers from './assets/sunflowers.png'
+//import sunflowers from './assets/sunflowers.png'
 import './App.css'
 
 //TODO: - on page load function to make ball fall down from top middle
