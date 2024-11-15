@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react'
 import ball from './assets/ball.gif'
+import sunflowers from './assets/sunflowers.png'
 import './App.css'
 
 //TODO: - on page load function to make ball fall down from top middle
@@ -23,7 +24,7 @@ function App()
     if (count === 10) 
     {
       const timeout = setTimeout(() => {
-        document.body.classList.add("new-background");
+        //document.body.classList.add("new-background");
         alert("You've clicked the ball 10 times! 🎉");
         setCount(0); // Reset count
       }, 500); // Wait 500ms (this = transition duration)
@@ -68,6 +69,9 @@ function App()
       <p className="click-ball">
         What's the worst that could happen?
       </p>
+      <div className="sunflowers">
+        <img src={sunflowers}/>
+      </div>
     </>
   )
 }
