@@ -22,9 +22,13 @@ function App()
   useEffect(() => {
     if (count === 10) 
     {
- 
-      alert("You've clicked the ball 10 times! 🎉");
-      setCount(0);
+      const timeout = setTimeout(() => {
+        alert("You've clicked the ball 10 times! 🎉");
+        setCount(0); // Reset count
+      }, 500); // Wait 500ms (this = transition duration)
+
+      // Clear timeout, prevent memory leaks
+      return () => clearTimeout(timeout);
       
       //TODO: 
       //additional things like sound? 
