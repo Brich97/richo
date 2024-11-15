@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.ball:hover {
+/** THIS CAUSES A VISUAL BUG, TODO: fix this, change gif to 
+  * still image and apply own rotations 
+.ball:hover { 
   filter: drop-shadow(0 0 2em #646cffaa);
-}
+}*/
 
 @keyframes logo-spin {
   from {
