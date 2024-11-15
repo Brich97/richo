@@ -9,7 +9,6 @@ function App() {
   const [position, setPosition] = useState({ top: "50%", left: "50%" })
   
   const imageClick = () => {
-    console.log("Ball image clicked!")
     const randomTop = Math.floor(Math.random() * 80) + 10 + "%";
     const randomLeft = Math.floor(Math.random() * 80) + 10 + "%";
     setPosition({ top: randomTop, left: randomLeft });
@@ -18,12 +17,6 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
       </div>
       <h1>Don't let your memes be dreams</h1>
       <div className="card">
@@ -52,6 +45,6 @@ function App() {
       </p>
     </>
   )
-} //TO DO - MAKE BALL MOVE SEAMLESSLY
+}
 
 export default App
