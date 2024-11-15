@@ -10,6 +10,7 @@ function App() {
     const randomTop = Math.floor(Math.random() * 80) + 10 + "%";
     const randomLeft = Math.floor(Math.random() * 80) + 10 + "%";
     setPosition({ top: randomTop, left: randomLeft });
+    setCount((count) => count + 1);
   }
 
   return (
@@ -18,7 +19,7 @@ function App() {
       </div>
       <h1>Don't let your memes be dreams</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button>
           count is {count}
         </button>
       </div>
