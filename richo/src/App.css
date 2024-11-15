@@ -17,7 +17,7 @@
   filter: drop-shadow(0 0 2em #646cffaa);
 }*/
 
-@keyframes logo-spin {
+@keyframes ball-spin {
   from {
     transform: rotate(0deg);
   }
@@ -28,7 +28,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: ball-spin infinite 20s linear;
   }
 }
 
@@ -46,4 +46,8 @@
   position: absolute;
   transform: translate(-50%, -50%);
   transition: top 0.5s ease, left 0.5s ease; /* Smooth transition */
+}
+
+.new-background {
+  background: linear-gradient(to right, rgb(105, 105, 105), rgb(0, 0, 0));
 }
