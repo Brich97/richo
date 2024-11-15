@@ -2,7 +2,12 @@ import { useState, useEffect} from 'react'
 import ball from './assets/ball.gif'
 import './App.css'
 
-function App() {
+//TODO: - on page load function to make ball fall down from top middle
+//Change ball gif to be png and apply own rotations, see if that 
+//resolves bug that comes from applying hover
+
+function App() 
+{
   const [count, setCount] = useState(0)
   const [position, setPosition] = useState({ top: "50%", left: "50%" })
   
@@ -15,23 +20,30 @@ function App() {
 
   //useEffect allows specific code to run when the value of a state variable changes.
   useEffect(() => {
-    if (count === 10) {
+    if (count === 10) 
+    {
+ 
       alert("You've clicked the ball 10 times! 🎉");
-      // To Do: 
+      setCount(0);
+      
+      //TODO: 
       //additional things like sound? 
     }
-  }, [count]); // Only run when `count` changes
+  }, [count]); // Only run when count changes
+
+  /*
+  <div className="card">
+        <button>
+          count is {count}
+        </button>
+      </div>
+  */
 
   return (
     <>
       <div>
       </div>
       <h1>Bounce The Ball...</h1>
-      <div className="card">
-        <button>
-          count is {count}
-        </button>
-      </div>
       <div className="ball">
       <a>
           <img
