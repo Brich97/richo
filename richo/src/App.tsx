@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import ball from './assets/ball.gif'
 import './App.css'
 
@@ -13,11 +13,18 @@ function App() {
     setCount((count) => count + 1);
   }
 
+  useEffect(() => {
+    if (count === 10) {
+      alert("You've clicked the ball 10 times! 🎉");
+      // You can add more functionality here, like resetting the count or playing a sound
+    }
+  }, [count]); // Only run when `count` changes
+
   return (
     <>
       <div>
       </div>
-      <h1>Click The Ball...</h1>
+      <h1>Bounce The Ball...</h1>
       <div className="card">
         <button>
           count is {count}
