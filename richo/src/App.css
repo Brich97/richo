@@ -49,18 +49,19 @@
 }
 
 .sunflowers {
-  position: fixed;
+  position: fixed; /* Fix it to the bottom of the viewport */
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: auto; /* Maintains aspect ratio */
-  z-index: -1; /* Sends it behind other content if necessary */
+  width: 100%; /* Full width */
+  height: 200px; /* Set a fixed height for the footer area */
+  z-index: -1; /* Send behind other content */
+  overflow: hidden; /* Prevent any overflow */
 }
 
 .sunflowers img {
-  width: 100%; /* Makes the image stretch to the width of the page */
-  height: auto; /* Maintains the image's aspect ratio */
-  object-fit: cover; /* Ensures the image covers the space neatly */
+  width: 100%; /* Stretch the image width to match the container */
+  height: 100%; /* Ensure it fills the container height */
+  object-fit: cover; /* Maintain proper aspect ratio without distortion */
 }
 
 .new-background {
