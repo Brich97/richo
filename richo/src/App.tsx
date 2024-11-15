@@ -17,7 +17,7 @@ function App() {
     <>
       <div>
       </div>
-      <h1>Don't let your memes be dreams</h1>
+      <h1>Click The Ball...</h1>
       <div className="card">
         <button>
           count is {count}
