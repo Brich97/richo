@@ -13,10 +13,12 @@ function App() {
     setCount((count) => count + 1);
   }
 
+  //useEffect allows specific code to run when the value of a state variable changes.
   useEffect(() => {
     if (count === 10) {
       alert("You've clicked the ball 10 times! 🎉");
-      // You can add more functionality here, like resetting the count or playing a sound
+      // To Do: 
+      //additional things like sound? 
     }
   }, [count]); // Only run when `count` changes
 
