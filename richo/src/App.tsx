@@ -40,7 +40,7 @@ function App() {
         </a>
       </div>
       <p className="click-ball">
-        Click the ball
+        What's the worst that could happen?
       </p>
     </>
   )
