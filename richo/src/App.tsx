@@ -23,9 +23,9 @@ function App()
     if (count === 10) 
     {
       const timeout = setTimeout(() => {
+        document.body.classList.add("new-background");
         alert("You've clicked the ball 10 times! 🎉");
         setCount(0); // Reset count
-        document.body.classList.add("new-background");
       }, 500); // Wait 500ms (this = transition duration)
 
       // Clear timeout, prevent memory leaks
